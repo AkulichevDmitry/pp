@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PowerPC</title>
+        <link href="./index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+    <script src="./src/ComputerComponents/ComputerComponent.js" type="module"></script>
+    <script src="./src/ComputerComponents/Videocard.js" type="module"></script>
+    <script src="./src/ComputerComponents/Processor.js" type="module"></script>
+    <script src="./src/ComputerComponents/RAM.js" type="module"></script>
+    <script src="./src/ComputerComponents/MemoryStorage.js" type="module"></script>
+
+    <script src="./index.js" type="module"></script>
+
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.jpg" alt="Изображение логотипа" width="100px"/>
+        </a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./about.html">О НАС</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+    </nav>
+    
+    <main style="display: flex; flex-wrap: wrap">
+        <section class="gpu">
+            <div class="title">
+                <h1 class="gpu__text">Choose GPU</h1>
+                <img src="assets/proccessor.png" alt="">
+            </div>
+                <label for="gpu_name">NAME GPU</label>
+                <input type="text" class="gpu__name" id="gpu_name">
+            <br/>
+                <label for="gpu_company">GPU COMPANY</label>
+                <input type="text" class="gpu__company" id="gpu_company">
+            <br/>
+
+                <label for="gpu_size">MEMORY SIZE</label>
+                <input type="text" class="gpu__size" id="gpu_size">
+            <br/>
+
+                <label for="gpu_size">MEMORY CLOCK</label>
+                <input type="text" class="gpu__clock" id="">
+        </section>
+        <section class="processor">
+            <div class="title">
+                <h1>Choose Processor</h1> <img src="./assets/videocard.png" alt=""><br/>
+            </div>
+                <div style="display: block">
+                    <label>PROCESSOR NAME</label>
+                    <input type="text" class="processor-name" required/>
+                    <br/>
+                    <label>PROCESSOR COMPANY</label>
+                    <input type="text" class="processor-company" required/>
+                    <br/>
+                    <label>PROCESSOR FREQUENCY</label>
+                    <input type="number" class="processor-frequency" required/>
+                    <br/>
+                    <label>PROCESSOR COUNT OF CORS</label>
+                    <input type="number" class="processor-cors" required/>
+                </div>
+            </div>
+        </section>
+        <section class="ram">
+            <div class="title">
+                <h1>Choose RAM</h1> <img src="./assets/ram.png" alt="">
+            </div>
+                <label>RAM NAME</label>
+                <input type="text" class="ram-name" required>
+                <br/>
+                <label>COUNT OF RAM</label>
+                <input type="number" class="count-of-ram" required>
+                <br>
+            </div>
+        </section>
+        <section class="memory-storage">
+            <div class="title">
+                <h1>Choose Memory Storage</h1> <img src="./assets/hdd.png" alt="">
+            </div>
+                <label>MEMORY STORAGE NAME</label>
+                <input type="text" class="memory-storage-name" required>
+            <br>
+                <label>MEMORY STORAGE TYPE</label>
+                <input type="text" class="memory-storage-type" required>
+            <br>
+
+                <label>MEMORY STORAGE COUNT</label>
+                <input type="number" class="memory-storage-count" required>
+            </div>
+        </section>
+        <section class="processor">
+            <div class="title">
+                <h1>Choose Motherboard</h1> <img src="./assets/videocard.png" alt="">
+                <input type="text" class="motherboard-name" required>
+            </div>
+        </section>
+
+
+        <button class="result-button">get result</button>
+        <h1 class="result"></h1>
+    </main>
+
+</body>
+</html>
