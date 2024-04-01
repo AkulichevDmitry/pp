@@ -26,9 +26,13 @@
         </a>
     </header>
     <nav>
-        <ul>
-            <li><a href="./about.html">О НАС</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
+        <ul style="display: flex; justify-content: space-around">
+            <div class="link-wrapper">
+                <a class="link hover-2" href="./about.html">О НАС</a>
+            </div>
+            <div class="link-wrapper">
+                <a class="link hover-2" href="./about.html">Контакты</a>
+            </div>
         </ul>
     </nav>
     
@@ -98,15 +102,16 @@
                 <input type="number" class="memory-storage-count" required>
             </div>
         </section>
+
         <section class="processor">
             <div class="title">
                 <h1>Choose Motherboard</h1> <img src="./assets/videocard.png" alt="">
-                <input type="text" class="motherboard-name" required>
+                <input type="text" id="subject" class="form-control motherboard-name" placeholder="Motherboard name" required />
             </div>
         </section>
 
 
-        <button class="result-button">get result</button>
+        <button class="custom-btn btn-3 result-button"><span>Get result</span></button>
         <h1 class="result"></h1>
     </main>
 
