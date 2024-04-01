@@ -224,3 +224,19 @@ button {
         }
     }
 }
+
+.cube {
+    width: 100px;
+    height: 100px;
+    background-color: #db34db;
+    animation: rotateCube 4s infinite linear;
+}
+
+@keyframes rotateCube {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
